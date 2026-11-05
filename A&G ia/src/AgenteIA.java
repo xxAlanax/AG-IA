@@ -1,20 +1,10 @@
 
-public class AgenteIA implements Geravel {
-	private String nome;
+public class AgenteIA extends Usuario implements Geravel {
 	private String modelo;
 	
 	public AgenteIA(String nome, String modelo) {
-		super();
-		this.setNome(nome);
-		this.setModelo(modelo);
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
+		super(nome);
+		this.modelo = modelo;
 	}
 
 	public String getModelo() {
