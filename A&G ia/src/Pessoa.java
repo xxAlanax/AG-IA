@@ -1,15 +1,15 @@
 
 public class Pessoa extends Usuario {
 	private String email;
-	private boolean plano;
+	private Plano plano;
 	private boolean logado;
 	
 
 
-	public Pessoa(String nome, String email, boolean plano, boolean login) {
+	public Pessoa(String nome, String email, Plano plano, Boolean login) {
 		super(nome);
 		this.email = email;
-		this.plano = plano;
+		this.setPlano(plano);
 		this.setLogado(login);
 	}
 
@@ -31,20 +31,20 @@ public class Pessoa extends Usuario {
 	public void VerPlano() {
 	}
 
-	public boolean isPlano() {
-		return plano;
-	}
-
-	public void setPlano(boolean plano) {
-		this.plano = plano;
-	}
-
 	public boolean isLogado() {
 		return logado;
 	}
 
 	public void setLogado(boolean logado) {
 		this.logado = logado;
+	}
+
+	public Plano getPlano() {
+		return plano;
+	}
+
+	public void setPlano(Plano plano) {
+		this.plano = plano;
 	}
 
 
