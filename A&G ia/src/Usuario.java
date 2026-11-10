@@ -2,7 +2,11 @@
 public abstract class Usuario  {
 	private String nome;
 
-	public Usuario(String nome2) {
+	public Usuario(String nome) {
+	    this.nome = nome;
+	}
+
+	public Usuario() {
 		// TODO Auto-generated constructor stub
 	}
 
