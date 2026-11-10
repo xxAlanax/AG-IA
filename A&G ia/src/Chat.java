@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Chat extends itens {
+public class Chat extends item {
 	private int qtdmensagens;
 	private ArrayList<Mensagem> conversa;
 	
