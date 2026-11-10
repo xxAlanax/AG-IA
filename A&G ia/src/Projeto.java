@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Projeto extends itens{
+public class Projeto extends Item{
 	private ArrayList<Chat> chatsProjeto;
 
 	@Override
