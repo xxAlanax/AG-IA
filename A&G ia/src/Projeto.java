@@ -41,4 +41,49 @@ public class Projeto extends Item{
 	}
 
 
+	// Modificações
+	import java.util.ArrayList;
+
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+
+public class Projeto extends Item {
+	private ArrayList<Chat> chats;
+
+	public Projeto(String nome) {
+		super(nome);
+		this.chats = new ArrayList<>();
+	}
+
+	@Override
+	void criar() {
+		this.dataCriacao = LocalDateTime.now();
+	}
+
+	@Override
+	void excluir() {
+		chats.clear();
+	}
+
+	@Override
+	void renomear(String novoNome) {
+		this.nome = novoNome;
+	}
+
+	void adicionarChat(Chat chat) {
+		if (!chats.contains(chat)) {
+			chats.add(chat);
+		}
+	}
+
+	void removerChat(Chat chat) {
+		chats.remove(chat);
+	}
+
+	ArrayList<Chat> listarChats() {
+		return chats;
+	}
+}
+
+
 }
